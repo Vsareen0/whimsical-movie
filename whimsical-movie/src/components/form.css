@@ -1,0 +1,47 @@
+form {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+@media only screen and (max-width: 600px) and (min-width: 400px) {
+  form {
+    flex-direction: column;
+  }
+  input,
+  select,
+  button {
+    margin-top: 20px;
+    border-radius: 5px;
+  }
+  select,
+  button {
+    height: 35px;
+  }
+}
+
+input {
+  height: 35px;
+  margin-left: 10px;
+  border-radius: 5px;
+  outline: 0;
+  border: 1px solid rgb(230, 230, 230);
+  text-indent: 10px;
+}
+select,
+button {
+  margin-left: 10px;
+  border-radius: 5px;
+  outline: 0;
+  border: 1px solid rgb(230, 230, 230);
+}
+
+button {
+  width: 150px;
+  border-radius: 10px;
+  outline: 0;
+  background-color: rgb(56, 64, 250);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
